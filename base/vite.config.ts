@@ -7,6 +7,7 @@ import { join } from "path";
 
 export default defineConfig(() => {
   return {
+    basePath:'/base',
     plugins: [
       qwikCity(),
       qwikVite(),
