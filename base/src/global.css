@@ -2,7 +2,6 @@
 @import "open-props/normalize";
 @import "open-props/buttons";
 @import "../public/styles/page.css";
-@import "../public/styles/brand.css";
 
 
 @font-face {
@@ -40,6 +39,7 @@ body {
   margin: 0;
   position: relative;
   padding: 0;
+  background-color:var(--surface-1);
 }
 
 

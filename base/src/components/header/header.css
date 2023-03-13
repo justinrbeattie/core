@@ -2,6 +2,7 @@ header {
   display: flex;
   background: white;
   border-bottom: 10px solid var(--qwik-dark-purple);
+  height:var(--top-nav-height);
 }
 
 header .logo a {
@@ -31,4 +32,8 @@ header li a {
 
 header li a:hover {
   text-decoration: underline;
+}
+
+.logo {
+  max-height: 48px;
 }

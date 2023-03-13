@@ -1,5 +1,4 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { Logo } from "@core-components";
 import styles from './header.css?inline';
 
 export default component$(() => {
@@ -8,7 +7,6 @@ export default component$(() => {
   return (
     <header>
       <div class="logo">
-      <Logo />
       </div>
       <ul>
         <li>

@@ -1,0 +1,28 @@
+
+ li {
+    position: relative;
+    scroll-snap-align: start;
+    display: flex;
+    flex: 0 0 auto;
+    scroll-margin: 0 calc(var(--carousel-gap) * 2);
+    padding: 0;
+    max-width: unset;
+    content-visibility: visible;
+    animation: var(--animation-fade-in) forwards;
+    transition: all .25s var(--ease-elastic-1);
+  }
+  
+  
+ li [inert]>* {
+    content-visibility: hidden;
+  }
+  
+ li > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: var(--default-item-width);
+    min-height: var(--default-item-height);
+    background: var(--surface-2);
+    transition: all 0s var(--ease-elastic-1);
+  }
