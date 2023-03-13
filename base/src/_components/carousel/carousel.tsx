@@ -132,8 +132,13 @@ export const Carousel = component$(() => {
             const fullyVisible = store.carouselItemList.filter((item) => item.fullyVisible);
             if (fullyVisible) {
                 const lastVisibleItemIndex = fullyVisible.length - 1;
-                fullyVisible[0].firstFullyVisible = true;
-                fullyVisible[lastVisibleItemIndex].lastFullyVisible = true;
+                if(fullyVisible[0]) {
+                    fullyVisible[0].firstFullyVisible = true;
+                }
+                if( fullyVisible[lastVisibleItemIndex]) {
+                    fullyVisible[lastVisibleItemIndex].lastFullyVisible = true;
+                }
+
             }
             const lastItemIndex = store.carouselItemList.length - 1;
             store.scrolledToStart = store.carouselItemList[0].firstFullyVisible;

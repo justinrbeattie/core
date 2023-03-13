@@ -1,5 +1,5 @@
 import { component$, Signal, useSignal, useStylesScoped$ } from '@builder.io/qwik';
-import type { RouteLevelStore } from '~/routes/(base)/layout';
+import { RouteLevelStore } from '~/routes/layout';
 import styles from './drawer.css?inline';
 
 export const Drawer = component$((props: { store: RouteLevelStore }) => {
@@ -34,8 +34,9 @@ export const Drawer = component$((props: { store: RouteLevelStore }) => {
 
 const iframeLoad = (store: RouteLevelStore, dialogRef: Signal<Element | undefined>, iframeRef: Signal<Element | undefined>) => {
   const dialog = dialogRef.value as HTMLDialogElement;
-  const iframe = iframeRef.value as HTMLDialogElement;
+  const iframe = iframeRef.value as HTMLIFrameElement;
   if (dialog && iframe) {
+    console.log(store);
     dialog.show();
     setTimeout(() => { dialog.scrollIntoView() }, 0);
     intersectionObserverInit(store, iframe);

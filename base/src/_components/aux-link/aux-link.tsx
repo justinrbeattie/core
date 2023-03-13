@@ -17,7 +17,7 @@ spa navigation
 
 const getQueryString = (location: RouteLocation, props: AuxLinkProps) => {
  location.url.searchParams.set(props.level, props.href);   
-    return '?' + location.url.searchParams.toString();
+    return '?' + location.url.searchParams.toString().replace('%2F', '/' );
 };
 
 
