@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { Logo } from "../../../../core-component-library";
+import { Logo } from "@core-components";
 import styles from './header.css?inline';
 
 export default component$(() => {
