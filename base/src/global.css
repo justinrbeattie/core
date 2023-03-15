@@ -1,6 +1,6 @@
-@import "open-props/style";
-@import "open-props/normalize";
-@import "open-props/buttons";
+@import "open-props/postcss/style";
+@import "open-props/postcss/normalize";
+@import "open-props/postcss/buttons";
 @import "../public/styles/page.css";
 
 

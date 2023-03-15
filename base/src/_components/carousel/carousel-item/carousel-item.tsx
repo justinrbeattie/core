@@ -31,9 +31,9 @@ const intersectionObserverInit = (element: HTMLElement, store: CarouselItemStore
         ($event) => { _intersectionCallback($event, store) },
         {
             root: element.parentElement,
-            threshold: Array(11)
-                .fill(1)
-                .map((x, i) => Math.round((i * 0.1 + Number.EPSILON) * 100) / 100),
+            threshold: Array(1001)
+            .fill(0)
+            .map((x, i) => Math.round((i * 0.001 + Number.EPSILON) * 1000) / 1000),
         }
     );
     intersectionObserver.observe(element);

@@ -87,7 +87,7 @@ ul::-webkit-scrollbar {
   border-radius: 1rem;
   border:none;
   opacity:.5;
-  background-color: var(--brand);
+  background-color: var(--brand-light);
 
 }
 
