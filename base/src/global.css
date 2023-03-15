@@ -10,7 +10,7 @@
   font-display: swap;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("../fonts/Inter-roman.var.woff2") format("woff2");
+  src: url("../public/fonts/Inter-roman.var.woff2") format("woff2");
 }
 
 :root {
