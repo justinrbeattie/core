@@ -17,9 +17,10 @@
     "outDir": "tmp",
     "noEmit": true,
     "types": ["node", "vite/client"],
+    "baseUrl": "../base" ,
     "paths": {
       "~/*": ["./src/*"],
-      "@core-components": ["../core-component-library"]
+      "@core-components": ["../core-component-library/*"]
     }
   },
   "files": ["./.eslintrc.cjs"],
